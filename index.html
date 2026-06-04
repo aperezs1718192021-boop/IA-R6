@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R6 Siege — AI Strategy Hub</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="scanline"></div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo-icon">R6</div>
+    <div class="logo-text">SIEGE <span>AI</span></div>
+    <div class="header-tag">STRATEGY HUB v1.0</div>
+  </header>
+
+  <!-- APP -->
+  <div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <div class="sidebar-label">// Selecciona mapa</div>
+        <div class="search-box">
+          <span class="search-icon">⌕</span>
+          <input type="text" id="mapSearch" placeholder="Buscar mapa...">
+        </div>
+      </div>
+      <div class="map-list" id="mapList"></div>
+    </aside>
+
+    <!-- PANEL PRINCIPAL -->
+    <main class="main">
+
+      <!-- CABECERA DEL MAPA -->
+      <div class="map-header" id="mapHeaderArea" style="display:none;">
+        <div class="map-info">
+          <div class="map-title" id="mapTitleDisplay">—</div>
+          <div class="map-subtitle" id="mapSubtitleDisplay">// SELECCIONA MODO</div>
+        </div>
+        <div class="tabs">
+          <button class="tab-btn" id="tabAtk">⚔ ATAQUE</button>
+          <button class="tab-btn" id="tabDef">🛡 DEFENSA</button>
+        </div>
+      </div>
+
+      <!-- ÁREA DE CONTENIDO -->
+      <div class="content-area">
+        <div class="strategy-panel" id="strategyPanel">
+          <div class="no-map">
+            <div class="no-map-icon">◈</div>
+            <div class="no-map-text">Selecciona un mapa</div>
+            <div class="no-map-sub">para obtener estrategias</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BARRA DE PREGUNTA LIBRE -->
+      <div class="input-bar">
+        <input
+          type="text"
+          class="question-input"
+          id="customQuestion"
+          placeholder="Pregunta algo específico sobre el mapa... (ej: ¿cómo defender sala de ordenadores?)"
+        >
+        <button class="ask-btn" id="askBtn" disabled>ANALIZAR</button>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

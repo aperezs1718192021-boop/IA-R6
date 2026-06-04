@@ -1,0 +1,17 @@
+# Dependencias
+node_modules/
+
+# Archivos de entorno / claves
+.env
+config.js
+secrets.js
+
+# VS Code
+.vscode/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
