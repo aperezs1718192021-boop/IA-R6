@@ -1,17 +1,23 @@
-# Dependencias
-node_modules/
+# API Keys - NUNCA subir esto a GitHub
+.streamlit/secrets.toml
 
-# Archivos de entorno / claves
+# Entorno virtual
+venv/
+env/
 .env
-config.js
-secrets.js
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
 
 # VS Code
 .vscode/
 
-# Sistema operativo
+# macOS
 .DS_Store
-Thumbs.db
 
-# Logs
-*.log
+# Streamlit cache
+.streamlit/cache/
